@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Home</title>
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-material-datetimepicker.css"/>
+    <link rel="stylesheet" href="assets/vegas/vegas.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- JavaScript -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap-material-datetimepicker.js"></script>
+    <script src="assets/vegas/vegas.js"></script>
+    <script src="assets/js/jquery.matchHeight-min.js"></script>
+    <script src="assets/js/script.js?v=1.0"></script>
+</head>
+<body>
+<div class="header">
+    <nav class="navbar navbar-inverse navbar-top">
+        <div class="container">
+            <div class="navbar-absolute">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 logo-mobile">
+                        <div class="logo"><a href="index.html"><img src="assets/img/logo.png"/></a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 mobile">
+                        <div class="drop-mobile-menu">
+                            <a href="business-services.html">Home</a>
+                            <span class="glyphicon glyphicon-chevron-down pull-right" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                        <ul class="nav navbar-nav header-menu">
+                            <li class="active"><a href="index.html" class="menu-icon home-icon">Home</a></li>
+                            <li class="business-menu-mobile"><a href="business-services.html" class="menu-icon bussiness-icon">&nbsp;Business
+                                <br> Services</a></li>
+                            <li class="personal-menu-mobile"><a href="travel.html" class="menu-icon personal-icon">&nbsp;&nbsp;Personal <br>
+                                Travel</a></li>
+                            <li><a href="groups.html" class="menu-icon team-icon">Groups</a></li>
+                            <li><a href="about-us.html" class="menu-icon about-icon">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="banner-slideshow banner-slideshow-homepage">
+    <div class="control-vagas">
+        <!--<div class="icon-next-vagas"><img src="assets/img/arr-left.png"></div>-->
+        <!--<div class="icon-prev-vagas"><img src="assets/img/arr-right.png"></div>-->
+    </div>
+</div>
+<div class="content">
+    <div class="home">
+        <div class="block-search" id="tabs">
+            <div class="tabs-menu-container">
+                <div class="container">
+                    <ul class="list-tab">
+                        <li class="active"><a href="#tabs-search-location"><span>HOTELS</span></a></li>
+                        <li><a href="#tabs-review"><span>contact us</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tabs-container">
+                <div class="container">
+                    <div class="tab-item active" id="tabs-search-location">
+                        <div class="search-form">
+                            <form>
+                                <div class="search-form-inputs">
+                                    <h2>Hotel Name, Meeting Address, Airport or City :</h2>
+                                    <div class="input-search">
+                                        <input type="text" class="form-control"/>
+                                    </div>
+                                    <div class="input-date">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                        <input type="text" id="checkin-date" class="form-control"
+                                               placeholder="Check-in date"/>
+                                        <span class="text-after-change">Check-in date</span>
+                                        <div class="calendar-show" id="calendar-checkin"></div>
+                                    </div>
+                                    <div class="input-date">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                        <input type="text" id="checkout-date" class="form-control"
+                                               placeholder="Check-out date"/>
+                                        <span class="text-after-change">Check-out-date</span>
+                                        <div class="calendar-show" id="calendar-checkout"></div>
+                                    </div>
+
+                                </div>
+                                <div class="search-form-buttons">
+                                    <button type="submit">FREE PRICE REPORT</button>
+                                </div>
+                                <div class="caption-bot">
+                                    <p>
+                                        Available to Business and Non-Business Travelers
+                                        Detailed Searches Powered by Decision Algorithms
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-item" id="tabs-review">
+                        <div class="row">
+                            <div class="col-sm-6 list-circle">
+                                <div class="item">
+                                    <p>
+                                        For General Inquiries and Messages
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p>
+                                        For Assistance with Groups and Team Reservations over $2,000
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p>
+                                        For Hotel Changes, Cancellations, and Refund Requests
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-5 right-tab-contact">
+                                <div class="item">
+                                    <p class="mail-to-text">Contact@SideSuit.com</p>
+                                </div>
+                                <div class="item">
+                                    <p class="mail-to-text">Groups@SideSuit.com</p>
+                                </div>
+                                <div class="item">
+                                    <p><a href="#">Reply Directly</a> to Your SideSuit Hotel Confirmation</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-home">
+            <div class="container contact-us-container">
+                <p class="title-box-gray">Business BOOKINGS</p>
+                <div class="row list-block">
+                    <div class="col-sm-4 item">
+                        <div class="item-content">
+                            <div class="img-thumb">
+                                <img src="images/home-list-1.jpg" alt=""/>
+                            </div>
+                            <p class="title-box">Grand Hyatt New York</p>
+                            <div class="box-link">
+                                <a href="#">Price Report</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 item">
+                        <div class="item-content">
+                            <div class="img-thumb">
+                                <img src="images/home-list-2.jpg" alt=""/>
+                            </div>
+                            <p class="title-box">Hilton Chicago O’Hare</p>
+                            <div class="box-link">
+                                <a href="#">Price Report</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 item">
+                        <div class="item-content">
+                            <div class="img-thumb">
+                                <img src="images/home-list-3.jpg" alt=""/>
+                            </div>
+                            <p class="title-box">Omni San Francisco</p>
+                            <div class="box-link">
+                                <a href="#">Price Report</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 item">
+                        <div class="item-content">
+                            <div class="img-thumb">
+                                <img src="images/home-list-4.jpg" alt=""/>
+                            </div>
+                            <p class="title-box">InterContinental London Park Lane
+                            </p>
+                            <div class="box-link">
+                                <a href="#">Price Report</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 item">
+                        <div class="item-content">
+                            <div class="img-thumb">
+                                <img src="images/home-list-5.jpg" alt=""/>
+                            </div>
+                            <p class="title-box">The Westin Grand Frankfurt</p>
+                            <div class="box-link">
+                                <a href="#">Price Report</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 item">
+                        <div class="item-content">
+                            <div class="img-thumb">
+                                <img src="images/home-list-6.jpg" alt=""/>
+                            </div>
+                            <p class="title-box">Sofitel Philadelphia</p>
+                            <div class="box-link">
+                                <a href="#">Price Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-partner">
+            <div class="container">
+                <div class="partner-item"><a href="http://www.blueridgepartners.com"><img
+                        src="images/partner2.jpg"/></a>
+                </div>
+                <div class="partner-item"><a href="http://www.decisionsky.com"><img
+                        src="images/partner1.jpg"/></a></div>
+            </div>
+        </div>
+        <div class="nav-bottom-link">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="business-services.html">Business Services</a></li>
+                    <li><a href="travel.html">Personal Travel</a></li>
+                    <li><a href="groups.html">Groups</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="logo-footer">
+            <a href="#"><img src="images/logo-footer.png" alt=""/></a>
+            <span class="text-cpr">© 2017 SideSuit. All rights reserved</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
