@@ -1,0 +1,36 @@
+@import "fonts";
+@import 'rem';
+@import 'home';
+@import 'groups';
+@import 'travel';
+@import 'about-us';
+@import 'business-services';
+@import 'slider';
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+body {
+  @include rem(font-size, 1.6rem);
+   overflow-x: hidden !important;
+  font-family: $htveticaneue;
+
+}
+.content {
+  padding: 0rem 0rem 0rem 0rem;
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 9999;
+}
+.container {
+  max-width: 87.75rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body.contain-black{
+  background: #434343;
+}
